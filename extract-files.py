@@ -24,8 +24,8 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/xiaomi/msm8998-common',
+    'device/xiaomi/msm8998-common/qcom-caf',
     'hardware/qcom-caf/common/libqti-perfd-client',
-    'hardware/qcom-caf/msm8998',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
     'vendor/qcom/opensource/dataservices',
@@ -60,43 +60,14 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('\nsigreturn: 1', ''),
     'vendor/etc/izat.conf': blob_fixup()
         .patch_file('gps/0001-gps-izat-Disable-slim_daemon.patch'),
-    'vendor/lib/hw/camera.msm8998.so': blob_fixup()
-        .binary_regex_replace(b'service.bootanim.exit', b'service.bootanim.zzzz')
-        .remove_needed('android.hidl.base@1.0.so')
-        .remove_needed('libminikin.so'),
     (
-     'vendor/lib/lib_lowlight.so',
      'vendor/lib/libSonyIMX386PdafLibrary.so',
-     'vendor/lib/libXMFD_AgeGender.so',
-     'vendor/lib/libarcsoft_beautyshot.so',
      'vendor/lib/libarcsoft_beautyshot_image_algorithm.so',
      'vendor/lib/libarcsoft_beautyshot_video_algorithm.so',
      'vendor/lib/libarcsoft_dualcam_optical_zoom.so',
      'vendor/lib/libarcsoft_dualcam_optical_zoom_control.so',
      'vendor/lib/libarcsoft_dualcam_refocus.so',
-     'vendor/lib/libmorpho_easy_hdr.so',
-     'vendor/lib/libmorpho_hdr_checker.so',
     ): blob_fixup()
-        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    'vendor/lib/lib_lowlight_dxo.so': blob_fixup()
-        .fix_soname()
-        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    'vendor/lib/libFaceGrade.so': blob_fixup()
-        .remove_needed('libandroid.so')
-        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    'vendor/lib/libMiCameraHal.so': blob_fixup()
-        .add_needed('libcamera_shim.so')
-        .add_needed('libpiex_shim.so')
-        .clear_symbol_version('AHardwareBuffer_acquire')
-        .clear_symbol_version('AHardwareBuffer_describe')
-        .clear_symbol_version('AHardwareBuffer_release')
-        .remove_needed('libft2.so')
-        .remove_needed('libharfbuzz_ng.so')
-        .remove_needed('libheif.so')
-        .remove_needed('libicuuc.so')
-        .remove_needed('libminikin.so'),
-    'vendor/lib/libarcsoft_beauty_shot.so': blob_fixup()
-        .remove_needed('libandroid.so')
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib/libmmcamera_faceproc.so': blob_fixup()
         .clear_symbol_version('__aeabi_memcpy')
