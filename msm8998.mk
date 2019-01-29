@@ -132,7 +132,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service_32.lineage
+    android.hardware.camera.provider-service_32.lineage \
+    camera.msm8998
 
 # Configstore
 PRODUCT_PACKAGES += \

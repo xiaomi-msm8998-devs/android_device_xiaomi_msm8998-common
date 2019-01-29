@@ -63,6 +63,10 @@ AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := false
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 BOARD_USES_ALSA_AUDIO := true
 
+# Camera
+BOARD_QTI_CAMERA_32BIT_ONLY := true
+$(call project-set-path,qcom-camera,$(PLATFORM_PATH)/qcom-caf/camera)
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
 
