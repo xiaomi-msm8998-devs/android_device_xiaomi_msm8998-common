@@ -494,6 +494,7 @@ private:
     QCamera3RegularChannel *mDummyBatchChannel;
     QCamera3DepthChannel *mDepthChannel;
     QCameraPerfLockMgr mPerfLockMgr;
+    QCameraFOVControl *m_pFovControl;
     QCameraThermalAdapter &m_thermalAdapter;
     uint32_t mChannelHandle;
 
@@ -632,7 +633,6 @@ public:
     cam_format_t mRdiModeFmt;
     QCamera3QCfaRawChannel *mQCFARawChannel;
     bool m_bQuadraCfaRequest;
-    QCameraFOVControl *m_pFovControl;
 private:
     uint32_t mFirstFrameNumberInBatch;
     camera3_stream_t mDummyBatchStream;
