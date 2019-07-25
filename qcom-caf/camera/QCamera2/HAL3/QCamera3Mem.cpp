@@ -1127,6 +1127,12 @@ int QCamera3GrallocMemory::cacheOps(uint32_t index, unsigned int cmd)
     int rc = 0;
     bool needToInvalidate = false;
     struct private_handle_t *privateHandle = NULL;
+    privateHandle = (struct private_handle_t *)getBufferHandle(index);
+
+    if(privateHandle->flags &
+         (private_handle_t::PRIV_FLAGS_NON_CPU_WRITER)){
+           needToInvalidate = true;
+    }
 
     if (index >= MM_CAMERA_MAX_NUM_FRAMES) {
         LOGE("Index out of bounds");
@@ -1136,14 +1142,6 @@ int QCamera3GrallocMemory::cacheOps(uint32_t index, unsigned int cmd)
         LOGE("buffer index %d less than starting index %d",
                  index, mStartIdx);
         return BAD_INDEX;
-    }
-
-    privateHandle = mPrivateHandle[index];
-    if (privateHandle != NULL){
-        if(privateHandle->flags &
-             (private_handle_t::PRIV_FLAGS_NON_CPU_WRITER)){
-               needToInvalidate = true;
-        }
     }
 
     LOGD("needToInvalidate %d buf idx %d", needToInvalidate, index);
