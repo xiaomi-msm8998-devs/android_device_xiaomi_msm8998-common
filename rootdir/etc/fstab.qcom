@@ -18,4 +18,4 @@
 /dev/block/bootdevice/by-name/misc                              /misc                  emmc    defaults                                                                                           defaults
 /dev/block/zram0                                                none                   swap    defaults                                                                                           zramsize=50%,zram_backingdev_size=512M
 
-/devices/soc/a800000.ssusb/a800000.dwc3/xhci-hcd.0.auto/usb*    auto                   auto    defaults                                                                                           voldmanaged=usb:auto
+/devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.*.auto/usb*       auto                   auto    defaults                                                                                           voldmanaged=usb:auto
