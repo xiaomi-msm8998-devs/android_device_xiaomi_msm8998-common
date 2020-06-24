@@ -146,6 +146,9 @@ ro.hardware.vulkan=msm8998
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 
+# Incremental FS
+ro.incremental.enable=true
+
 # Media
 debug.stagefright.omx_default_rank=0
 
