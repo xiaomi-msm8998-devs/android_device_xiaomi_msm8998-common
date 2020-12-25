@@ -43,6 +43,7 @@ TARGET_KERNEL_CLANG_VERSION := r563880c
 TARGET_KERNEL_CONFIG := vendor/xiaomi/mi8998_defconfig
 TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8998
+TARGET_KERNEL_VERSION := 4.19
 
 BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0 androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1da4000.ufshc
