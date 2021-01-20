@@ -352,6 +352,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/common/libqti-perfd-client \
     hardware/xiaomi
 
+QCOM_SOONG_NAMESPACE := $(LOCAL_PATH)/qcom-caf
+
 # Telephony
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
