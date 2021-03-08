@@ -133,6 +133,9 @@ vendor.gralloc.enable_fb_ubwc=1
 # FRP
 ro.frp.pst=/dev/block/platform/soc/1da4000.ufshc/by-name/frp
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Graphics
 ro.hardware.egl=adreno
 ro.hardware.vulkan=msm8998
