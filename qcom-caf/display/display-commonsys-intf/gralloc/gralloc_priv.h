@@ -26,7 +26,7 @@
 #include "QtiGrallocDefs.h"
 #include "gr_priv_handle.h"
 
-#pragma message "Warning: gralloc_priv.h is deprecated"
+//#pragma message "Warning: gralloc_priv.h is deprecated"
 
 #define GRALLOC_PROP_PREFIX  "vendor.gralloc."
 #define GRALLOC_PROP(prop_name) GRALLOC_PROP_PREFIX prop_name
