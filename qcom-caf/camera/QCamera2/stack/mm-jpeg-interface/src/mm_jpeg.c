@@ -3154,6 +3154,7 @@ int32_t mm_jpeg_create_session(mm_jpeg_obj *my_obj,
       p_session->params.thumb_dim.crop = p_session->params.main_dim.crop;
     }
 
+#ifdef LIB2D_ROTATION_ENABLE
   if (my_obj->is_lib2d_enable) {
     if (p_session->params.rotation) {
       if (my_obj->static_lib2d_handle == NULL) {
@@ -3172,6 +3173,7 @@ int32_t mm_jpeg_create_session(mm_jpeg_obj *my_obj,
   } else {
     p_session->lib2d_rotation_flag = 0;
   }
+#endif
 
     if (p_session->lib2d_rotation_flag) {
       p_session->num_src_rot_bufs = p_session->params.num_src_bufs;
