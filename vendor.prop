@@ -217,6 +217,14 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 # USB
 vendor.usb.controller=a800000.dwc3
 vendor.usb.device=a800000.ssusb
+vendor.usb.diag.func.name=diag
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.qdss.inst.name=qdss
+vendor.usb.rmnet.func.name=rmnet_bam
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=rndis_bam
+vendor.usb.use_ffs_mtp=0
+vendor.usb.use_gadget_hal=0
 
 # Verity
 ro.apk_verity.mode=2
