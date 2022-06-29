@@ -310,6 +310,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     init.fingerprint.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
