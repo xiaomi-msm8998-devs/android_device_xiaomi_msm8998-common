@@ -25,10 +25,11 @@ from extract_utils.main import (
 namespace_imports = [
     'device/xiaomi/msm8998-common',
     'hardware/qcom-caf/common/libqti-perfd-client',
-    'hardware/qcom-caf/msm8998',
+    'hardware/qcom-caf/sdm660',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
     'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
@@ -119,13 +120,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libmpbase.so': blob_fixup()
         .remove_needed('libandroid.so')
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    'vendor/lib64/hw/vulkan.msm8998.so': blob_fixup()
-        .clear_symbol_version('AHardwareBuffer_acquire')
-        .clear_symbol_version('AHardwareBuffer_allocate')
-        .clear_symbol_version('AHardwareBuffer_describe')
-        .clear_symbol_version('AHardwareBuffer_getNativeHandle')
-        .clear_symbol_version('AHardwareBuffer_release')
-        .fix_soname(),
     'vendor/lib64/libdlbdsservice.so': blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     'vendor/lib64/libril-qc-hal-qmi.so': blob_fixup()

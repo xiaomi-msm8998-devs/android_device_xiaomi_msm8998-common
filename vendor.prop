@@ -141,7 +141,7 @@ persist.sys.fuse.passthrough.enable=true
 
 # Graphics
 ro.hardware.egl=adreno
-ro.hardware.vulkan=msm8998
+ro.hardware.vulkan=adreno
 
 # IMS
 persist.dbg.volte_avail_ovr=1
