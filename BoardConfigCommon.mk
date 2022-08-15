@@ -54,6 +54,7 @@ BOARD_KERNEL_CMDLINE += loop.max_part=7
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8998
+TARGET_ENFORCES_QSSI := true
 
 # A/B
 AB_OTA_UPDATER := false
