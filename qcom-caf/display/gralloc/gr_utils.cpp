@@ -302,7 +302,11 @@ unsigned int GetSize(const BufferInfo &info, unsigned int alignedw,
       size = ALIGN((alignedw * alignedh) + (alignedw * alignedh) / 2 + 1, SIZE_4K);
       break;
     case HAL_PIXEL_FORMAT_YCbCr_420_P010:
-      size = ALIGN((alignedw * alignedh * 2) + (alignedw * alignedh) + 1, SIZE_4K);
+      #ifndef TARGET_USES_GRALLOC4
+        return 0;
+      #else
+        size = ALIGN((alignedw * alignedh * 2) + (alignedw * alignedh) + 1, SIZE_4K);
+      #endif
       break;
     case HAL_PIXEL_FORMAT_YCbCr_422_SP:
     case HAL_PIXEL_FORMAT_YCrCb_422_SP:
