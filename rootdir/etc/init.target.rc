@@ -132,7 +132,7 @@ on init
     chmod 0664 /dev/cpuset/camera-daemon-dedicated/tasks
 
     # report max frequency to unity tasks.
-    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so,libil2cpp.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
 
 on early-init
