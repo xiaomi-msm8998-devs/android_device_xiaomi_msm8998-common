@@ -341,6 +341,7 @@ vendor/lib/libwvaidl.so|39b55a8d55752542c0cc3965a9acbf0fc37f09cf
 vendor/lib64/hw/gatekeeper.sdm660.so:vendor/lib64/hw/gatekeeper.msm8998.so;FIX_SONAME|d760257a98254b9e87ae258e267b1a45a0ed7ecb|58063798ec6d09925915f45f08985def09e08121
 
 # GNSS - from Fairphone/FP3/FP3:13/6.A.040.2/gms-d33dc62f:user/release-keys
+vendor/app/CACertService/CACertService.apk|e33ff0c06356a8fa843f49dfa27ee21c77733738
 vendor/bin/loc_launcher|923d85bd727fb809b43fa86adbf739dd2b55285c
 vendor/bin/lowi-server|5d18cc8854549c366f63cdce29178eb48c9b24b0
 vendor/bin/mlid|46ddb37a149cf09bff592437a41ff30e849c234e
@@ -358,12 +359,14 @@ vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|3faeada4db08a081852d06bacda693ab2fb4
 vendor/lib64/libasn1cper.so|74d2219f2f41e3f302db9bbf89f9c798d6af90f2
 vendor/lib64/libasn1crt.so|6780d64f14411f0bb1e7cc4568651bfd7ea3badf
 vendor/lib64/libasn1crtx.so|684ad8097d744ae53c9632a053130dd4f1d69eb4
+vendor/lib64/libcacertclient.so|69ae73b9be13507ff39398ac5813ad709b8b7c32
 vendor/lib64/libcdfw.so|543b8282f4b6719113f04e14dd908137521e2bb5
 vendor/lib64/libcdfw_remote_api.so|558636f4fa4c17f29cb644c8c6e07766b7240005
 vendor/lib64/libdataitems.so|392953954f2fb59ce4a2e8acc11c4188e418fee2
 vendor/lib64/libgdtap.so|b46b7f6caaf2c2d4f43ed263bcdff3edfdc9f0f1
 vendor/lib64/libizat_client_api.so|331cc111b7ca79f110147fb49e935fcd745b02e8
 vendor/lib64/libizat_core.so|dc3e14f4203d1146ea5fed09b47a2cbb70f12bdc
+vendor/lib64/libjnihelper.so|d3687f06782adc074a38b9ff3c1aacd57ec7a6e7
 vendor/lib64/liblbs_core.so|447d28e3b08355282b53c01b2431cdda3b480c40
 vendor/lib64/libloc_api_v02.so|b58a91ab6775bbffad7154fe5c3445d310a951ac
 vendor/lib64/libloc_socket.so|3aed3ebfa35ab1ed8a1ce6b63391000878e59372
@@ -382,6 +385,7 @@ vendor/lib64/vendor.qti.gnss@2.1.so|148c38d7bb7f604637ff38d25aed75f412ebea3e
 vendor/lib64/vendor.qti.gnss@3.0.so|511a8354bb199b1b4d0d264762bdc078fd9f3e6b
 vendor/lib64/vendor.qti.gnss@4.0-service.so|218e7e15a1d3b58bb8adb695e7b37036977c5573
 vendor/lib64/vendor.qti.gnss@4.0.so|7ba7853e772806f98fe60243542498a146dfe248
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so|1633c31212d1ea9338b79ebfc2476f83424f36ee
 
 # Graphics - from taimen-user-11-RP1A.201005.004.A1-6934943-release-keys
 vendor/lib/egl/eglSubDriverAndroid.so;SYMLINK=vendor/lib/eglSubDriverAndroid.so|1626fe65bbeb29b8072d4448d30ed3c1acbab8fd
