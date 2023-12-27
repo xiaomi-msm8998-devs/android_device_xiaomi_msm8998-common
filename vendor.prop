@@ -116,9 +116,6 @@ vidc.enc.dcvs.extra-buff-count=2
 # CNE
 persist.vendor.cne.feature=1
 
-# Dalvik
-dalvik.vm.systemuicompilerfilter=speed
-
 # Display
 debug.renderengine.backend=skiaglthreaded
 debug.sf.enable_hwc_vds=0
