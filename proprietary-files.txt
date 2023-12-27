@@ -333,7 +333,7 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so;MODULE_SUFFIX=_vendor|f6b0e0e95
 
 # DRM (Widevine) - from Fairphone/FP3/FP3:13/6.A.035.5/gms-921df471:user/release-keys
 vendor/bin/hw/android.hardware.drm-service.widevine|cdbd2b11c53df4c9151317d9990914d6fe6e526c
-vendor/etc/init/android.hardware.drm-service.widevine.rc|54c79ef531c9c135fa234a8515b3d37f0e1ccc4d
+vendor/etc/init/android.hardware.drm-service.widevine.rc|54c79ef531c9c135fa234a8515b3d37f0e1ccc4d|54e6d444a863b6401564cd2acd3652f60cae105b
 vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml|7e13b6628572b1cdd76351b744e2805d4e6f2dd9
 vendor/lib/libwvaidl.so|e4b8c607d4dba42307cdf08be69610795a0a168d
 
