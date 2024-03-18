@@ -211,6 +211,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery
 
+# HotwordEnrollement
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hotwordenrollment/privapp-permissions-google-product-hotwordenrollment.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-product-hotwordenrollment.xml
+
 # IFAA manager
 PRODUCT_PACKAGES += \
     IFAAService
