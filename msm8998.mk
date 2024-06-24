@@ -382,7 +382,9 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.qti
+    android.hardware.usb-service.qti \
+    android.hardware.usb.gadget-service.qti \
+    usb_compositions.conf
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
