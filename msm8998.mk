@@ -126,31 +126,17 @@ PRODUCT_COPY_FILES += \
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService-Soong \
-    com.dsi.ant@1.0.vendor
+    AntHalService-Soong
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio-impl \
-    audio.bluetooth.default \
-    vendor.qti.hardware.btconfigstore@1.0.vendor:64 \
-    vendor.qti.hardware.btconfigstore@2.0.vendor:64
+    audio.bluetooth.default
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0_32 \
-    android.frameworks.displayservice@1.0.vendor \
-    android.frameworks.sensorservice@1.0 \
-    android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.camera.device@3.5:64 \
     android.hardware.camera.provider@2.4-impl:32 \
-    android.hardware.camera.provider@2.4-service \
-    android.hardware.camera.provider@2.6:64 \
-    libcamera_shim \
-    libpiex_shim \
-    libpng.vendor:32 \
-    vendor.qti.hardware.camera.device@1.0:64
+    android.hardware.camera.provider@2.4-service
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -171,9 +157,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8998 \
-    hwcomposer.qcom \
-    libdisplayconfig \
-    libqdMetaData.system
+    hwcomposer.qcom
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
@@ -188,8 +172,7 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
-    android.hardware.drm-V1-ndk.vendor
+    android.hardware.drm-service.clearkey
 
 # Extra
 $(call inherit-product-if-exists, vendor/extra/extra.mk)
@@ -197,14 +180,6 @@ $(call inherit-product-if-exists, vendor/extra/extra.mk)
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
-
-PRODUCT_PACKAGES += \
-    com.fingerprints.extension@1.0.vendor \
-    vendor.goodix.hardware.fingerprintextension@1.0.vendor
-
-# fwk-detect
-PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -239,18 +214,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery
 
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1.vendor
-
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.memory@1.0.vendor \
-    libhidlmemory.vendor:64 \
-    libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
-
 # IFAA manager
 PRODUCT_PACKAGES += \
     IFAAService
@@ -258,9 +221,7 @@ PRODUCT_PACKAGES += \
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
-    ims_ext_common.xml \
-    libgui_shim \
-    libion.vendor
+    ims_ext_common.xml
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -304,19 +265,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
-# Media Extensions
-PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor
-
-# Mlipay
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.mlipay@1.1.vendor:64 \
-    vendor.xiaomi.hardware.mtdservice@1.0.vendor:64
-
-# Net
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
-
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
@@ -345,25 +293,15 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
-    android.hardware.power@1.3.vendor \
     libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
-
 # QCOM
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist.xml
-
-# QMI
-PRODUCT_PACKAGES += \
-    libjson
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -388,14 +326,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor \
-    CarrierConfigOverlay \
-    libnetutils.vendor \
-    librmnetctl \
-    libsqlite.vendor:64
+    CarrierConfigOverlay
 
 PRODUCT_PACKAGES += \
     android.hardware.radio.c_shim@1.0 \
@@ -410,8 +341,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl-xiaomi:64 \
-    android.hardware.sensors@1.0-service \
-    libpower.vendor
+    android.hardware.sensors@1.0-service
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -444,17 +374,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
-# VNDK
-PRODUCT_PACKAGES += \
-    libdng_sdk.vendor_32 \
-    libstagefright_foundation-v33 \
-    libstdc++_vendor
-
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
-    libcld80211 \
     libwpa_client \
     hostapd \
     WifiOverlay \
@@ -462,7 +385,6 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi.hostapd@1.0.vendor \
     android.hardware.wifi-service
 
 PRODUCT_PACKAGES += \
