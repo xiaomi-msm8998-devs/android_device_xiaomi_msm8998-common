@@ -111,6 +111,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libmpbase.so': blob_fixup()
         .remove_needed('libandroid.so')
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'vendor/lib64/hw/vulkan.msm8998.so': blob_fixup()
+        .fix_soname(),
     'vendor/lib64/libdlbdsservice.so': blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     'vendor/lib64/libril-qc-hal-qmi.so': blob_fixup()
