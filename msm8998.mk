@@ -179,7 +179,7 @@ $(call inherit-product-if-exists, vendor/extra/extra.mk)
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi
+    android.hardware.biometrics.fingerprint-service.xiaomi
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
