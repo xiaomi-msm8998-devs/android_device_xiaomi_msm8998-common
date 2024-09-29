@@ -13,9 +13,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 ANDROID_ROOT="${MY_DIR}/../../.."
 
-# If XML files don't have comments before the XML header, use this flag
-# Can still be used with broken XML files by using blob_fixup
-export TARGET_DISABLE_XML_FIXING=true
+export TARGET_ENABLE_CHECKELF=false
 
 HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
@@ -78,7 +76,19 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed "libminikin.so" "${2}"
             sed -i "s/service.bootanim.exit/service.bootanim.zzzz/g" "${2}"
             ;;
-        vendor/lib/lib_lowlight.so|vendor/lib/lib_lowlight_dxo.so|vendor/lib/libSonyIMX386PdafLibrary.so|vendor/lib/libXMFD_AgeGender.so|vendor/lib/libarcsoft_beautyshot.so|vendor/lib/libarcsoft_beautyshot_image_algorithm.so|vendor/lib/libarcsoft_beautyshot_video_algorithm.so|vendor/lib/libarcsoft_dualcam_optical_zoom.so|vendor/lib/libarcsoft_dualcam_optical_zoom_control.so|vendor/lib/libarcsoft_dualcam_refocus.so|vendor/lib/libmmcamera_hdr_gb_lib.so|vendor/lib/libmorpho_easy_hdr.so|vendor/lib/libmorpho_hdr_checker.so)
+        vendor/lib/lib_lowlight.so | \
+            vendor/lib/lib_lowlight_dxo.so | \
+            vendor/lib/libSonyIMX386PdafLibrary.so | \
+            vendor/lib/libXMFD_AgeGender.so | \
+            vendor/lib/libarcsoft_beautyshot.so | \
+            vendor/lib/libarcsoft_beautyshot_image_algorithm.so | \
+            vendor/lib/libarcsoft_beautyshot_video_algorithm.so | \
+            vendor/lib/libarcsoft_dualcam_optical_zoom.so | \
+            vendor/lib/libarcsoft_dualcam_optical_zoom_control.so | \
+            vendor/lib/libarcsoft_dualcam_refocus.so | \
+            vendor/lib/libmmcamera_hdr_gb_lib.so | \
+            vendor/lib/libmorpho_easy_hdr.so | \
+            vendor/lib/libmorpho_hdr_checker.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF_0_17_2}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
