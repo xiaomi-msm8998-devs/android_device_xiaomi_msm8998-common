@@ -259,6 +259,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
+    libgui_shim \
     libion.vendor
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
