@@ -4,6 +4,9 @@
 //
 
 soong_namespace {
+    imports: [
+        "vendor/xiaomi/msm8998-common",
+    ],
 }
 
 install_symlink {
