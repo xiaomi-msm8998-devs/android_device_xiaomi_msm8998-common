@@ -664,10 +664,10 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|62cd64dbb25d082cfdc742fb03931ba0f9a
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|fa120eaa7807ff43f3974a8e0146a8c00c78f623
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
 
-# Radio - IMS - from Redmi/sweet_global/sweet:12/SKQ1.210908.001/V13.0.3.0.SKFMIXM:user/release-keys
-system_ext/lib64/lib-imsvideocodec.so|b7001bb1008106ccb9ef92dd2560e2052b40c325
-system_ext/lib64/lib-imsvtutils.so|875748249b9269e964f467311c72e123878c0de9
-system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|ff3d65093f5bf19fba95798b0a121ee510b0f72e
+# Radio - IMS - from sweet_k6a OS1.0.10.0.THGMIXM
+system_ext/lib64/lib-imsvideocodec.so|a9a8c609d40f42fc29dd7976d1148363010fcc57
+system_ext/lib64/lib-imsvtutils.so|67ce2fc38fbf819e397b19e1ff46c70183e890d2
+system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|eabd9c136541982655d3f7a52360fb5acb03407a
 
 # Sensors
 vendor/bin/sensors.qti
