@@ -23,8 +23,6 @@ vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
 # Alarm - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
 product/app/PowerOffAlarm/PowerOffAlarm.apk|c7a8a195c47e1a3386173106ff6e2a68403b2e14
-system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar|6508f5708221399eb8bd9754dc49bad32a911e27
-system_ext/lib64/vendor.qti.hardware.alarm@1.0.so|abf6cf11e5f5f3b5a111350aae351df62532ed71
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|e8f29b90facd4d605dca41644f5a0dc77f6d2e9b
 vendor/bin/power_off_alarm|b41ffb912ae8db9c3abd7e3c94e9e77160cf7ff6
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
@@ -303,7 +301,6 @@ vendor/lib/libQSEEComAPI.so|2ab0e804dfc482a60a8f02247a6adf2435a41e6d
 vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
 vendor/lib64/libGPreqcancel_svc.so|d539a9c7368973264e71700824b21ce8e5339441
 vendor/lib64/libQSEEComAPI.so|c94db2c194c9edebe5e6c40d63bec1589432d62e
-vendor/lib64/libSecureUILib.so|19e0cd0438cf94953722355357e1a42a3209216e
 vendor/lib64/libStDrvInt.so|1161fc5b029125b2ac87a27e88555c14725f182f
 vendor/lib64/libcpion.so|dbeb95d8792600f9113ba24dfea10a9534eeb5fb
 vendor/lib64/libdrmfs.so|95da701370dd40644baab29d60a6613888ce1ea0
@@ -311,13 +308,7 @@ vendor/lib64/libdrmtime.so|ca5000d5e7f7c16f197fc669f7a5170023d2e4c9
 vendor/lib64/libhdcpsrm.so|5d52991a622e7c975707bc564fa6bad89803e79d
 vendor/lib64/libqisl.so|c79719eebc094c2af9561e8df2c158638b111b70
 vendor/lib64/librpmb.so|4ae66b5b5d27b0302bb1d0a5f2396958ed8209c9
-vendor/lib64/libsecureui.so|1cb5b3e219c31b6fe5e7ba5b27d434e045e085ed
-vendor/lib64/libsecureui_svcsock.so|ba9f7aa7605e54110afea5d9921381f6e6d71a19
 vendor/lib64/libssd.so|5b9ac8a457118b1e1b80f87fdc0e78d916ee099a
-
-# DRM and SEE - from Coral - Tiramisu/TPP1.220114.016/8158200
-vendor/lib64/libops.so|3c763226ccc3b0f32e131af71a458b41bf2b3d8d
-vendor/lib64/libspl.so|f8bbe0322ce06a545f5dc79c888183ac61673b68
 
 # DRM (TUI) - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
 system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so|066cee9ea342a677e91e0c112c7989a1a3ff66f1
