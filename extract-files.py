@@ -117,6 +117,11 @@ blob_fixups: blob_fixups_user_type = {
         .remove_needed('libandroid.so')
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/hw/vulkan.msm8998.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_acquire')
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_getNativeHandle')
+        .clear_symbol_version('AHardwareBuffer_release')
         .fix_soname(),
     'vendor/lib64/libdlbdsservice.so': blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),

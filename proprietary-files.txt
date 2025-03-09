@@ -4,7 +4,6 @@
 # libmmcamera2_isp_modules, libmmcamera2_mct, libmmcamera2_sensor_modules, libmmcamera_interface
 # libmmjpeg_interface depend on intrinsic symbols which changed namespace (__aeabi_uldivmod, __aeabi_ldivmod, etc.), which are difficult to shim (TODO)
 # libril-qc-hal-qmi depends on android.hardware.radio.c_shim@1.{0..2} which are gnu makefile targets
-# vulkan.msm8998 depends on unresolved symbols AHardwareBuffer_acquire@LIBNATIVEWINDOW, AHardwareBuffer_allocate@LIBNATIVEWINDOW, AHardwareBuffer_describe@LIBNATIVEWINDOW, AHardwareBuffer_getNativeHandle@LIBNATIVEWINDOW, AHardwareBuffer_release@LIBNATIVEWINDOW
 
 # ADSP
 vendor/bin/adsprpcd
@@ -424,7 +423,7 @@ vendor/lib64/libsdmextension.so|7d0a49fd74e4b4d93a3d379267372ceaa79ca264
 vendor/lib64/libtinyxml2_1.so|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
 
 # Graphics (Vulkan) - from taimen-user-11-RP1A.201005.004.A1-6934943-release-keys
-vendor/lib64/hw/vulkan.adreno.so:vendor/lib64/hw/vulkan.msm8998.so;DISABLE_CHECKELF|2cd751f202e3e4c2566f0950dd41bf78fa0e8eef|347a3f1fff73037a6a0e2d2da8352c02c7026a0e
+vendor/lib64/hw/vulkan.adreno.so:vendor/lib64/hw/vulkan.msm8998.so|2cd751f202e3e4c2566f0950dd41bf78fa0e8eef|f31eb1c906d7f2a7b4e6d635ee0a74d5ee920d19
 
 # Graphics firmware
 vendor/firmware/a530_pfp.fw
