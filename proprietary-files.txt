@@ -28,7 +28,7 @@ vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libvpp_frc.so
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
-# Alarm - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# Alarm - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 product/app/PowerOffAlarm/PowerOffAlarm.apk|c7a8a195c47e1a3386173106ff6e2a68403b2e14
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|e8f29b90facd4d605dca41644f5a0dc77f6d2e9b
 vendor/bin/power_off_alarm|b41ffb912ae8db9c3abd7e3c94e9e77160cf7ff6
@@ -36,7 +36,7 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|fdc8542c93c3e0572a172040bb6bb741baba348e
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|f34f3f363932160ef659ec21543b0d33f0215dbc
 
-# ANT+ - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# ANT+ - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so|2bad2579ce576c46af6a50ee6687bd92fa7f76cd
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|6e2b594b44552b42000164c091af5cf7a4c508f5
 
@@ -71,7 +71,7 @@ vendor/lib64/libdlbdsservice.so|77e3a0d44ce95c7e5139badb94087ea58211b022|5d0629a
 vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so|7afb6907a83aa7c9faa7308ae5b39338eadac1c8
 vendor/lib64/vendor.dolby.hardware.dms@1.0.so|f3593ce869d036f98ddc7fc8223a8b55dcf0ca36
 
-# Bluetooth - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# Bluetooth - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|73d7132773572d87bdac6b5e454573e79d35316c
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|1e238b1e84d889f424001f5134f0d2994d13251a
@@ -223,7 +223,7 @@ vendor/lib/libois_bu63164.so
 # Charger
 vendor/bin/hvdcp_opti
 
-# CNE - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# CNE - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|551d0e3251eeda3af8dfa8bb55cd83b858365db8
 vendor/app/IWlanService/IWlanService.apk|a8bdac9638bc711e23269d2eead3f46a7b3b6a25
 vendor/bin/cnd|78d2771551abf43a093a0fbe0aba933c9f6a8097
@@ -283,7 +283,7 @@ vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|c041dbfc99643e791e52c4e7f3a
 vendor/lib64/vendor.qti.latency@2.0.so|82196d2863e012ad2b6e1b9af9d9ce7c611f64be
 vendor/lib64/vendor.qti.latency@2.1.so|d279c5e456bb3e546130df3cd6f398cea6b48eaf
 
-# DPM - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# DPM - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 system_ext/bin/dpmd|dc94ffe90c6658b0bc99c64f68517c4048d0321a
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
@@ -302,7 +302,7 @@ vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor|d9f1aa7f93b928f42499d613d20ccbc60f279097
 vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 
-# DRM and SEE - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# DRM and SEE - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/bin/qseecomd|5b40595c23a54d13fb611311a4ab9b22a9428e86
 vendor/lib/libQSEEComAPI.so|2ab0e804dfc482a60a8f02247a6adf2435a41e6d
 vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
@@ -317,7 +317,7 @@ vendor/lib64/libqisl.so|c79719eebc094c2af9561e8df2c158638b111b70
 vendor/lib64/librpmb.so|4ae66b5b5d27b0302bb1d0a5f2396958ed8209c9
 vendor/lib64/libssd.so|5b9ac8a457118b1e1b80f87fdc0e78d916ee099a
 
-# DRM (TUI) - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# DRM (TUI) - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so|066cee9ea342a677e91e0c112c7989a1a3ff66f1
 system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so|9d36beb8fa964584aae64a109543a4997417d70a
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
@@ -325,16 +325,16 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so;MODULE_SUFFIX=_vendor|ccdb6027a199d5549fc92de8ce2ddb006b4b486d
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so;MODULE_SUFFIX=_vendor|f6b0e0e951394b609f0cb5c19e83a37447d9d292
 
-# DRM (Widevine) - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# DRM (Widevine) - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/bin/hw/android.hardware.drm-service.widevine|cdbd2b11c53df4c9151317d9990914d6fe6e526c
 vendor/etc/init/android.hardware.drm-service.widevine.rc|54c79ef531c9c135fa234a8515b3d37f0e1ccc4d
 vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml|7e13b6628572b1cdd76351b744e2805d4e6f2dd9
 vendor/lib/libwvaidl.so|feb2fb9bd4207f401fd0266bfb06722cb881aa4f
 
-# Gatekeeper - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# Gatekeeper - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8998.so;FIX_SONAME|d760257a98254b9e87ae258e267b1a45a0ed7ecb|58063798ec6d09925915f45f08985def09e08121
 
-# GNSS - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# GNSS - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/bin/loc_launcher|923d85bd727fb809b43fa86adbf739dd2b55285c
 vendor/bin/lowi-server;DISABLE_CHECKELF|5d18cc8854549c366f63cdce29178eb48c9b24b0
 vendor/bin/mlid|46ddb37a149cf09bff592437a41ff30e849c234e
@@ -447,7 +447,7 @@ vendor/firmware/ipa_fws.mdt
 # IRQ balance
 vendor/bin/msm_irqbalance
 
-# Keystore - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# Keystore - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8998.so;FIX_SONAME|83a48633d4530c45e36cfb9cd7f3d63a8a5bc122|2f6980a247daa3038e2d5fc66b09debeea1833e1
 
 # Listen
@@ -467,19 +467,19 @@ vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/lib64/libmlipay@1.1.so
 
-# NFC firmware - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# NFC firmware - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so|a7e6076f426314c0186af4c256868959ee636d5d
 
 # PD mapper - from sld_sprout RKQ1.210607.001-00WW_3_490
 vendor/bin/pd-mapper|8eb9717d2ee4da59c64ec89a85bf4e384663322b
 vendor/lib64/libpdmapper.so|859a6acc25bf64a0503f333e960bf99d322f9f7e
 
-# Peripheral manager - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# Peripheral manager - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/bin/pm-proxy|910437c11108aa66e803bbc760ce3998d141a6b4
 vendor/bin/pm-service|98827a6bf6693033a7c767e3fb4f097b9075a0ef
 vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
 
-# QCC - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# QCC - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 system_ext/lib64/libqcc.so|869b683bb19acff628571703d7531d7de40247d1
 system_ext/lib64/libqcc_file_agent_sys.so|afa96a113e3b600253580bc103100347f354da92
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so|b139b448e1942905b029a80b9a6d4e98d1b9dd7d
@@ -491,7 +491,7 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor|3ff445db
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so|58dd8c5877ba3a274f43f63e6f033213dd84e1c4
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=_vendor|01b1d11316f5dcd8c1012a55ff01399081c79940
 
-# QMI - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# QMI - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 system_ext/lib64/libdiag_system.so|ead4f1d1065abca6ef47b522c1934eb7623c1813
@@ -528,7 +528,7 @@ vendor/lib64/libqmi_legacy.so|5dc657620cfaa6b13bd37268459c7247bae58770
 vendor/lib64/libqmiservices.so|2e259463cbeb329caec303b642ab4068c8d10be5
 vendor/lib64/libril-qc-logger.so|7f80da37d120faffd72838b76d74102c7321e3a3
 
-# Radio - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# Radio - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|341ac4f8b754883df97f2e9920f1e9a255a6a160
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/framework/qcrilhook.jar|2851c62bf5d823c4228bfc6c56613934517ffdee
@@ -605,7 +605,7 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|5d080c737f7aa
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql|a0603a5c46e8e67f78bdb42f2b246ecc6a37cecd
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql|4701219a79190995eda651e5c45e11c9b111a478
 
-# Radio - IMS - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# Radio - IMS - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 system_ext/lib64/lib-imscamera.so|8170256dbf9120ff05f193ba937c718d9c580881|79511a285e507953d328918f11172e18c4a713df
 system_ext/lib64/lib-imsvt.so|4f96cc5f27551d0b6cb11ad6447d9ce8829dde47
 system_ext/lib64/lib-imsvtextutils.so|1acf1de305e455a3a924483e5652b37133d10fd1
@@ -694,7 +694,7 @@ vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Time services - from Fairphone/FP3/FP3:13/6.A.031.5/gms-fa7632b5:user/release-keys
+# Time services - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
 vendor/bin/time_daemon|3fdbe5c7aeee2fc7e8b699bedd7309f768aae5c7
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
