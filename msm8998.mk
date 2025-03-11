@@ -377,7 +377,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
-    libwpa_client \
     hostapd \
     WifiOverlay \
     wpa_supplicant \
