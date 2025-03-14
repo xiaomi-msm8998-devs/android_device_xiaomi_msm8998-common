@@ -20,13 +20,11 @@ ifeq ($(TARGET_KERNEL_VERSION), 4.14)
     LOCAL_C_INCLUDES += system/core/libion/include
     LOCAL_C_INCLUDES += system/core/libion/kernel-headers/
   endif
-LOCAL_C_INCLUDES              += external/libcxx/include \
-                                 $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
+LOCAL_C_INCLUDES              += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_SHARED_LIBRARIES        += libion
 endif
 ifeq ($(TARGET_KERNEL_VERSION), 4.19)
-LOCAL_C_INCLUDES              += external/libcxx/include \
-                                 $(LIBION_HEADER_PATHS) \
+LOCAL_C_INCLUDES              += $(LIBION_HEADER_PATHS) \
                                  $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_SHARED_LIBRARIES        += libion
 endif
