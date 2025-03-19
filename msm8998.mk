@@ -24,7 +24,7 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
