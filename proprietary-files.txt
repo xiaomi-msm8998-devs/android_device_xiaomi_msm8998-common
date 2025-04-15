@@ -287,24 +287,24 @@ vendor/lib64/vendor.qti.latency@2.0.so|adb1c9e473a274828c1c25d1634674be722b2999
 vendor/lib64/vendor.qti.latency@2.1.so|89c180755e0b99a5c726f80cdfa083dbed2387f2
 vendor/lib64/vendor.qti.latencyaidlservice-V1-ndk.so|c6999642bfe1dc1b898865f66cf79b01d32cb1bf
 
-# DPM - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
-system_ext/bin/dpmd|dc94ffe90c6658b0bc99c64f68517c4048d0321a
+# DPM - from Zebra helios-user-14-14-23-05.00-UG-U05-STD-HEL-04-5-release-keys
+system_ext/bin/dpmd|27cbde2e641af2b78039f6e20beb742592a034f2
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
 system_ext/etc/permissions/com.qti.dpmframework.xml|c4b7ad0879d00c1eba4f3fe3a88ddb8aa153629a
-system_ext/etc/permissions/dpmapi.xml|9158c9789cc7135a685b3fb27f8cc27108b51fef
-system_ext/framework/com.qti.dpmframework.jar|96a29e28b3abffb9223daadd67459e3f5a3271df
-system_ext/framework/dpmapi.jar|2e2fbe2257a697b96a644c774136da0554430d3f
-system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|b992e1f565f7b8b814eac0c88517543e6d0de603
-system_ext/lib64/libdpmctmgr.so|8a687fce30df9483a96065e6cc4154f03562dfa9
-system_ext/lib64/libdpmfdmgr.so|bf3666db17e77da3a303c10579baec0bd018089f
-system_ext/lib64/libdpmframework.so|235fbb48b47baebd48dbe56f72c77d97ca12c07c
-system_ext/lib64/libdpmtcm.so|dff3d3dbacd18ed55b5758a174f5016ef9e7a896
-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|10828ba0d987fa884ad0b4a87a46bf9f505535ea
-vendor/bin/dpmQmiMgr|61a421804559b0e461439c19088acc01b871982a
+system_ext/etc/permissions/dpmapi.xml|255903759a60a31c0876ec004e74554c753270fe
+system_ext/framework/com.qti.dpmframework.jar|4fc38f534c788b80b432b385e07973bdd6e8c98f
+system_ext/framework/dpmapi.jar|c379f7a671439737fbff03411f28891d0f9313c9
+system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|02bcf5922126a764f30e2f22e97bc0f8c17b21ca
+system_ext/lib64/libdpmctmgr.so|6829b1041aa34befa0c02c9213babac6c11b4cc0
+system_ext/lib64/libdpmfdmgr.so|77163a32daa5b880e5fb7fd2fa2ae3a4baf5debc
+system_ext/lib64/libdpmframework.so|ee9680123e7aee2edb9b25681cb55f25e488b2e1
+system_ext/lib64/libdpmtcm.so|c869c67ea2fb3ea32976bfc6719c8c769a183f8b
+system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|257aa364cb26f3dd9121a5cff3f89871b992bc91
+vendor/bin/dpmQmiMgr|13a5010588993c121614ec5bb1e76e2ae7931b79
 vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor|d9f1aa7f93b928f42499d613d20ccbc60f279097
-vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor|cea24c38d54e75c3a03cdfc4b5f65a9c1f37813d
+vendor/lib64/libdpmqmihal.so|4e8ed4a61273d5023d4bab93077cf5d5e93508dc
 
 # DRM and SEE - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/bin/qseecomd|5b40595c23a54d13fb611311a4ab9b22a9428e86
