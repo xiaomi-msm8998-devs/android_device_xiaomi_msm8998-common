@@ -474,9 +474,9 @@ vendor/lib64/libmlipay@1.1.so
 # NFC firmware - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so|a7e6076f426314c0186af4c256868959ee636d5d
 
-# PD mapper - from sld_sprout RKQ1.210607.001-00WW_3_490
-vendor/bin/pd-mapper|8eb9717d2ee4da59c64ec89a85bf4e384663322b
-vendor/lib64/libpdmapper.so|859a6acc25bf64a0503f333e960bf99d322f9f7e
+# PD mapper - from Zebra helios-user-14-14-23-05.00-UG-U05-STD-HEL-04-5-release-keys
+vendor/bin/pd-mapper|618950d514e8547df5696727a7adc2d602d7cf85
+vendor/lib64/libpdmapper.so|3b1d1db7eae1c459918c036f081ae259ec5d0ccd
 
 # Peripheral manager - from Zebra helios-user-14-14-23-05.00-UG-U05-STD-HEL-04-5-release-keys
 vendor/bin/pm-proxy|41df355eb75dfb69b07083a37c3745dd6d084b36
