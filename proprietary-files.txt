@@ -478,10 +478,10 @@ vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so|a7e6076f426314c0186af4c256
 vendor/bin/pd-mapper|8eb9717d2ee4da59c64ec89a85bf4e384663322b
 vendor/lib64/libpdmapper.so|859a6acc25bf64a0503f333e960bf99d322f9f7e
 
-# Peripheral manager - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
-vendor/bin/pm-proxy|910437c11108aa66e803bbc760ce3998d141a6b4
-vendor/bin/pm-service|98827a6bf6693033a7c767e3fb4f097b9075a0ef
-vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
+# Peripheral manager - from Zebra helios-user-14-14-23-05.00-UG-U05-STD-HEL-04-5-release-keys
+vendor/bin/pm-proxy|41df355eb75dfb69b07083a37c3745dd6d084b36
+vendor/bin/pm-service|bf5ca6e5dfd398549bdd563c6e3edea12f4c027a
+vendor/lib64/libperipheral_client.so|31fab3060caeef08bcafb83f01a452bc29029723
 
 # QCC - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 system_ext/lib64/libqcc.so|869b683bb19acff628571703d7531d7de40247d1

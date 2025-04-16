@@ -223,12 +223,13 @@ on property:init.svc.vendor.charger=running
     chown system system /sys/class/leds/white/brightness
     write /sys/class/leds/white/brightness 255
 
-service vendor.per_mgr /vendor/bin/pm-service
+service vendor.per_mgr /system/vendor/bin/pm-service
     class core
     user system
-    group system net_raw
+    group system
+    ioprio rt 4
 
-service vendor.per_proxy /vendor/bin/pm-proxy
+service vendor.per_proxy /system/vendor/bin/pm-proxy
     class core
     user system
     group system
