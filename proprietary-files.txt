@@ -335,8 +335,8 @@ vendor/etc/init/android.hardware.drm-service.widevine.rc|54c79ef531c9c135fa234a8
 vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml|7e13b6628572b1cdd76351b744e2805d4e6f2dd9
 vendor/lib/libwvaidl.so|feb2fb9bd4207f401fd0266bfb06722cb881aa4f
 
-# Gatekeeper - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
-vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8998.so;FIX_SONAME|d760257a98254b9e87ae258e267b1a45a0ed7ecb|58063798ec6d09925915f45f08985def09e08121
+# Gatekeeper - from Zebra helios-user-14-14-23-05.00-UG-U05-STD-HEL-04-5-release-keys
+vendor/lib64/hw/gatekeeper.sdm660.so:vendor/lib64/hw/gatekeeper.msm8998.so;FIX_SONAME|d760257a98254b9e87ae258e267b1a45a0ed7ecb|58063798ec6d09925915f45f08985def09e08121
 
 # GNSS - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
 vendor/bin/loc_launcher|923d85bd727fb809b43fa86adbf739dd2b55285c
@@ -451,8 +451,8 @@ vendor/firmware/ipa_fws.mdt
 # IRQ balance
 vendor/bin/msm_irqbalance
 
-# Keystore - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
-vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8998.so;FIX_SONAME|83a48633d4530c45e36cfb9cd7f3d63a8a5bc122|2f6980a247daa3038e2d5fc66b09debeea1833e1
+# Keystore - from Zebra helios-user-14-14-23-05.00-UG-U05-STD-HEL-04-5-release-keys
+vendor/lib64/hw/keystore.sdm660.so:vendor/lib64/hw/keystore.msm8998.so;FIX_SONAME|919057c8178837f8ae563056ee4bb326f84cd67e|2f6980a247daa3038e2d5fc66b09debeea1833e1
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8998.so
