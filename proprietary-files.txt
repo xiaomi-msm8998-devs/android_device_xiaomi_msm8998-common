@@ -471,8 +471,8 @@ vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/lib64/libmlipay@1.1.so
 
-# NFC firmware - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
-vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so|a7e6076f426314c0186af4c256868959ee636d5d
+# NFC firmware - from Zebra helios-user-14-14-23-05.00-UG-U05-STD-HEL-04-5-release-keys
+vendor/lib64/libpn553_fw.so|b721a64040cc17949fe0a2ce2e2677d3065bfc22
 
 # PD mapper - from Zebra helios-user-14-14-23-05.00-UG-U05-STD-HEL-04-5-release-keys
 vendor/bin/pd-mapper|618950d514e8547df5696727a7adc2d602d7cf85
