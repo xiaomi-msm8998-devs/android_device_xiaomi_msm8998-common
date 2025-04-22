@@ -621,11 +621,6 @@ vendor/lib64/libnlnetmgr.so|8f6aba985f05c837868f7e1f32b6b2399de428f2
 vendor/lib64/libril-qc-hal-qmi.so;DISABLE_CHECKELF|cc70a2e8e2435dee4cb396dadbcd7c4c244287bd|f679e715373bb60322aa397a074e8c02a5328665
 
 # Radio - IMS - from Zebra helios-user-14-14-23-05.00-UG-U05-STD-HEL-04-5-release-keys
-system_ext/lib64/lib-imsvideocodec.so|4e754b5b78fa4228c7f7bb639e3e4edec984cfc5
-system_ext/lib64/lib-imsvt.so|aa6aaee7ec89ccab0a8314f13cdb37b5f4a0b3e4
-system_ext/lib64/lib-imsvtextutils.so|5048a889d3289471ea338b9139053b61f267495a
-system_ext/lib64/lib-imsvtutils.so|80cb83ced3f289e2fe8f444cf0cfd8c2842f4818
-system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|99a6cb66e2559bec21474284e615c78bac5010df
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|b2071cdbcf4fbf564d3247301c26c436c5d4bb80
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|a02b9e9b01dc0692ab1945112a2506fe58f1a990
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|c1f385482e4808793d86f41419494e8b4436305b
@@ -681,9 +676,14 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|f2e30c6693a33f3cd3d836dd1195a501e23
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|98cf76bc21d928d0d11a87aab8f9d5d84d8e6926
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor|bdda09f0e35d160a6e9482d8d20c562fd2fcce24
 
-# Radio - IMS - from Fairphone/FP3/FP3:13/6.A.031.7/gms-f31c7748:user/release-keys
-system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|b90664b4ce069358f36801da5ceac10baf4ebcc6
-system_ext/priv-app/ims/ims.apk|16b82e1e0113beb7fb3a62a9a5513b317675d96e
+# Radio - IMS - from LA.QSSI.15.0.r1-14000-qssi.0
+system_ext/lib64/lib-imsvideocodec.so|2db5b8c344b6de05dba4f9a1449fd74e17d78819
+system_ext/lib64/lib-imsvt.so|32fd182fe087a297395f1d6e1d90587a9b97d7c1
+system_ext/lib64/lib-imsvtextutils.so|5048a889d3289471ea338b9139053b61f267495a
+system_ext/lib64/lib-imsvtutils.so|acce4410add2b5088adab8f7b4e37e36e0c09105
+system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|0b61c9104edbcf3284daae09b253b2acbed65ad6
+system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|7616e2b6a8cb3dd2c7c594eed1b16417a1257125
+system_ext/priv-app/ims/ims.apk|a7f6f9f5634efa143fe0daa5065d74b91f3e780c
 
 # Sensors
 vendor/bin/sensors.qti
