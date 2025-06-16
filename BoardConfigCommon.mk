@@ -55,9 +55,6 @@ TARGET_BOARD_PLATFORM := msm8998
 # A/B
 AB_OTA_UPDATER := false
 
-# ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
-
 # Assert
 TARGET_BOARD_INFO_FILE := $(PLATFORM_PATH)/board-info.txt
 
