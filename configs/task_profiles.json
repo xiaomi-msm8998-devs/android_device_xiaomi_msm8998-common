@@ -1,6 +1,16 @@
 {
   "Attributes": [
     {
+      "Name": "STuneBoost",
+      "Controller": "schedtune",
+      "File": "schedtune.boost"
+    },
+    {
+      "Name": "STunePreferIdle",
+      "Controller": "schedtune",
+      "File": "schedtune.prefer_idle"
+    },
+    {
       "Name": "LowCapacityCPUs",
       "Controller": "cpuset",
       "File": "background/cpus"
@@ -63,21 +73,6 @@
       "File": "cgroup.event_control"
     },
     {
-      "Name": "UClampMin",
-      "Controller": "cpu",
-      "File": "cpu.uclamp.min"
-    },
-    {
-      "Name": "UClampMax",
-      "Controller": "cpu",
-      "File": "cpu.uclamp.max"
-    },
-    {
-      "Name": "UClampLatencySensitive",
-      "Controller": "cpu",
-      "File": "cpu.uclamp.latency_sensitive"
-    },
-    {
       "Name": "FreezerState",
       "Controller": "freezer",
       "File": "cgroup.freeze"
@@ -92,7 +87,7 @@
           "Name": "JoinCgroup",
           "Params":
           {
-            "Controller": "cpu",
+            "Controller": "schedtune",
             "Path": "background"
           }
         }
@@ -131,7 +126,7 @@
           "Name": "JoinCgroup",
           "Params":
           {
-            "Controller": "cpu",
+            "Controller": "schedtune",
             "Path": "system"
           }
         }
@@ -144,7 +139,7 @@
           "Name": "JoinCgroup",
           "Params":
           {
-            "Controller": "cpu",
+            "Controller": "schedtune",
             "Path": "system-background"
           }
         }
@@ -157,7 +152,7 @@
           "Name": "JoinCgroup",
           "Params":
           {
-            "Controller": "cpu",
+            "Controller": "schedtune",
             "Path": "foreground"
           }
         }
@@ -170,7 +165,7 @@
           "Name": "JoinCgroup",
           "Params":
           {
-            "Controller": "cpu",
+            "Controller": "schedtune",
             "Path": "foreground_window"
           }
         }
@@ -183,7 +178,7 @@
           "Name": "JoinCgroup",
           "Params":
           {
-            "Controller": "cpu",
+            "Controller": "schedtune",
             "Path": "top-app"
           }
         }
@@ -196,7 +191,7 @@
           "Name": "JoinCgroup",
           "Params":
           {
-            "Controller": "cpu",
+            "Controller": "schedtune",
             "Path": "rt"
           }
         }
@@ -209,7 +204,7 @@
           "Name": "JoinCgroup",
           "Params":
           {
-            "Controller": "cpu",
+            "Controller": "schedtune",
             "Path": "camera-daemon"
           }
         }
@@ -222,7 +217,7 @@
           "Name": "JoinCgroup",
           "Params":
           {
-            "Controller": "cpu",
+            "Controller": "schedtune",
             "Path": "nnapi-hal"
           }
         }
@@ -235,7 +230,7 @@
           "Name": "JoinCgroup",
           "Params":
           {
-            "Controller": "cpu",
+            "Controller": "schedtune",
             "Path": "dex2oat"
           }
         }
@@ -248,7 +243,7 @@
           "Name": "SetAttribute",
           "Params":
           {
-            "Name": "UClampLatencySensitive",
+            "Name": "STunePreferIdle",
             "Value": "1"
           }
         }
@@ -261,7 +256,7 @@
           "Name": "SetAttribute",
           "Params":
           {
-            "Name": "UClampLatencySensitive",
+            "Name": "STunePreferIdle",
             "Value": "0"
           }
         }
