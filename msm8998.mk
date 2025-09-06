@@ -169,6 +169,12 @@ PRODUCT_PACKAGES += \
 # Extra
 $(call inherit-product-if-exists, vendor/extra/extra.mk)
 
+# Filesystem
+PRODUCT_PACKAGES += \
+    e2fsck_ramdisk \
+    tune2fs_ramdisk \
+    resize2fs_ramdisk
+
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.xiaomi
