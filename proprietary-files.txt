@@ -84,7 +84,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|475311f05f103b23654253e1dc
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|f191bd8bb067e57a06af89ce2f9a9ea703bb2516
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|12c1ca37da7c6628f7b09cb3865818f72b8fef68
 
-# Bluetooth - from Fairphone/FP3/FP3:13/6.A.035.2/gms-691ff58c:user/release-keys
+# Bluetooth - from Fairphone/FP3/FP3:13/6.A.035.5/gms-921df471:user/release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|73d7132773572d87bdac6b5e454573e79d35316c
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|1e238b1e84d889f424001f5134f0d2994d13251a
 
@@ -308,7 +308,7 @@ vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor|cea24c38d54e75c3a03cdfc4b5f65a9c1f37813d
 vendor/lib64/libdpmqmihal.so|4e8ed4a61273d5023d4bab93077cf5d5e93508dc
 
-# DRM and SEE - from Fairphone/FP3/FP3:13/6.A.035.2/gms-691ff58c:user/release-keys
+# DRM and SEE - from Fairphone/FP3/FP3:13/6.A.035.5/gms-921df471:user/release-keys
 vendor/bin/qseecomd|5b40595c23a54d13fb611311a4ab9b22a9428e86
 vendor/lib/libQSEEComAPI.so|2ab0e804dfc482a60a8f02247a6adf2435a41e6d
 vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
@@ -323,7 +323,7 @@ vendor/lib64/libqisl.so|c79719eebc094c2af9561e8df2c158638b111b70
 vendor/lib64/librpmb.so|4ae66b5b5d27b0302bb1d0a5f2396958ed8209c9
 vendor/lib64/libssd.so|5b9ac8a457118b1e1b80f87fdc0e78d916ee099a
 
-# DRM (TUI) - from Fairphone/FP3/FP3:13/6.A.035.2/gms-691ff58c:user/release-keys
+# DRM (TUI) - from Fairphone/FP3/FP3:13/6.A.035.5/gms-921df471:user/release-keys
 system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so|066cee9ea342a677e91e0c112c7989a1a3ff66f1
 system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so|9d36beb8fa964584aae64a109543a4997417d70a
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
@@ -331,7 +331,7 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so;MODULE_SUFFIX=_vendor|ccdb6027a199d5549fc92de8ce2ddb006b4b486d
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so;MODULE_SUFFIX=_vendor|f6b0e0e951394b609f0cb5c19e83a37447d9d292
 
-# DRM (Widevine) - from Fairphone/FP3/FP3:13/6.A.035.2/gms-691ff58c:user/release-keys
+# DRM (Widevine) - from Fairphone/FP3/FP3:13/6.A.035.5/gms-921df471:user/release-keys
 vendor/bin/hw/android.hardware.drm-service.widevine|cdbd2b11c53df4c9151317d9990914d6fe6e526c
 vendor/etc/init/android.hardware.drm-service.widevine.rc|54c79ef531c9c135fa234a8515b3d37f0e1ccc4d
 vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml|7e13b6628572b1cdd76351b744e2805d4e6f2dd9
@@ -340,7 +340,7 @@ vendor/lib/libwvaidl.so|e4b8c607d4dba42307cdf08be69610795a0a168d
 # Gatekeeper - from Zebra helios-user-14-14-23-05.00-UG-U05-STD-HEL-04-5-release-keys
 vendor/lib64/hw/gatekeeper.sdm660.so:vendor/lib64/hw/gatekeeper.msm8998.so;FIX_SONAME|d760257a98254b9e87ae258e267b1a45a0ed7ecb|58063798ec6d09925915f45f08985def09e08121
 
-# GNSS - from Fairphone/FP3/FP3:13/6.A.035.2/gms-691ff58c:user/release-keys
+# GNSS - from Fairphone/FP3/FP3:13/6.A.035.5/gms-921df471:user/release-keys
 vendor/bin/loc_launcher|923d85bd727fb809b43fa86adbf739dd2b55285c
 vendor/bin/lowi-server|5d18cc8854549c366f63cdce29178eb48c9b24b0
 vendor/bin/mlid|46ddb37a149cf09bff592437a41ff30e849c234e
@@ -490,7 +490,7 @@ vendor/bin/pm-proxy|41df355eb75dfb69b07083a37c3745dd6d084b36
 vendor/bin/pm-service|bf5ca6e5dfd398549bdd563c6e3edea12f4c027a
 vendor/lib64/libperipheral_client.so|31fab3060caeef08bcafb83f01a452bc29029723
 
-# QCC - from Fairphone/FP3/FP3:13/6.A.035.2/gms-691ff58c:user/release-keys
+# QCC - from Fairphone/FP3/FP3:13/6.A.035.5/gms-921df471:user/release-keys
 system_ext/lib64/libqcc.so|869b683bb19acff628571703d7531d7de40247d1
 system_ext/lib64/libqcc_file_agent_sys.so|afa96a113e3b600253580bc103100347f354da92
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so|b139b448e1942905b029a80b9a6d4e98d1b9dd7d
@@ -502,7 +502,7 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor|3ff445db
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so|58dd8c5877ba3a274f43f63e6f033213dd84e1c4
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=_vendor|01b1d11316f5dcd8c1012a55ff01399081c79940
 
-# QMI - from Fairphone/FP3/FP3:13/6.A.035.2/gms-691ff58c:user/release-keys
+# QMI - from Fairphone/FP3/FP3:13/6.A.035.5/gms-921df471:user/release-keys
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 system_ext/lib64/libdiag_system.so|ead4f1d1065abca6ef47b522c1934eb7623c1813
@@ -610,7 +610,7 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql|fcb2cba3bfd71
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|0fdf4b6ccb48906b37885e060429f79c9fd6bdbf
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
 
-# Radio - from Fairphone/FP3/FP3:13/6.A.035.2/gms-691ff58c:user/release-keys
+# Radio - from Fairphone/FP3/FP3:13/6.A.035.5/gms-921df471:user/release-keys
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|11657ff5c62ab943f38ba64fe50478c22c5cb5ef
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|b6ec8438ddeb763e8be96e775672fb1b2b772b4b
 vendor/bin/netmgrd|86124ac523ae18dfcb5a9d5c11683cd18d13290b
@@ -626,7 +626,6 @@ vendor/lib64/libnlnetmgr.so|8f6aba985f05c837868f7e1f32b6b2399de428f2
 vendor/lib64/libril-qc-hal-qmi.so;DISABLE_CHECKELF|cc70a2e8e2435dee4cb396dadbcd7c4c244287bd|f679e715373bb60322aa397a074e8c02a5328665
 
 # Radio - IMS - from Zebra helios-user-14-14-23-05.00-UG-U05-STD-HEL-04-5-release-keys
-system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|b2071cdbcf4fbf564d3247301c26c436c5d4bb80
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|a02b9e9b01dc0692ab1945112a2506fe58f1a990
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|c1f385482e4808793d86f41419494e8b4436305b
 vendor/bin/ims_rtp_daemon|ec805e6eb6540b793b85b4ed529e111826310ef7
@@ -681,14 +680,16 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|f2e30c6693a33f3cd3d836dd1195a501e23
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|98cf76bc21d928d0d11a87aab8f9d5d84d8e6926
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor|bdda09f0e35d160a6e9482d8d20c562fd2fcce24
 
-# Radio - IMS - from LA.QSSI.15.0.r1-15400-qssi.0
-system_ext/lib64/lib-imsvideocodec.so|2db5b8c344b6de05dba4f9a1449fd74e17d78819
-system_ext/lib64/lib-imsvt.so|fdcc027ce8c8b8f21cd659c10a4c3f00ddf3611e
-system_ext/lib64/lib-imsvtextutils.so|5048a889d3289471ea338b9139053b61f267495a
-system_ext/lib64/lib-imsvtutils.so|acce4410add2b5088adab8f7b4e37e36e0c09105
-system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|0b61c9104edbcf3284daae09b253b2acbed65ad6
-system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|7616e2b6a8cb3dd2c7c594eed1b16417a1257125
-system_ext/priv-app/ims/ims.apk|6d3fa88eb5637eba8ff7c9ddc4a41a0b46eb2e03
+# Radio - IMS - from LA.QSSI.16.0.r1-06700-qssi.0
+system_ext/lib64/lib-imsvideocodec.so|3f3cf93169e36daf5b3d681eec4a30f861069307
+system_ext/lib64/lib-imsvt.so|abf68d46249295594fbab980334c47cdf19b053e
+system_ext/lib64/lib-imsvtextutils.so|101d8d4dfb4ff44d0089f9bcd339decdb523c874
+system_ext/lib64/lib-imsvtutils.so|2b95d982c8b9ee47a01db6ef6ad2a4da47142e13
+system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|bd0409212689cbc5c5e7fe5e4587d75bb3b5aebd
+system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|572398f0840f37e550a81503d609b438ea00905b
+system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|21832897ab986fcf58dbf6d2a1be84aeb7387de5
+system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so|d3f38714174fd3edaf226fcb787a4173490ab9fc
+system_ext/priv-app/ims/ims.apk|fbbace2741a2e06ed528ff1e619b26e3b7102f96
 
 # Sensors
 vendor/bin/sensors.qti
