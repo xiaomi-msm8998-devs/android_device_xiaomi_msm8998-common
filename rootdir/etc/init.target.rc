@@ -60,6 +60,13 @@ on init
     chmod 0664 /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
     chmod 0664 /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length
 
+    # Boot time fs tuning
+    write /sys/block/sda/queue/iostats 0
+    write /sys/block/sda/queue/scheduler cfq
+    write /sys/block/sda/queue/iosched/group_idle 0
+    write /sys/block/sda/queue/iosched/slice_idle 0
+    write /sys/block/sda/queue/nr_requests 256
+
     # Disable UFS powersaving
     write /sys/devices/soc/1da4000.ufshc/clkscale_enable 0
     write /sys/devices/soc/1da4000.ufshc/clkgate_enable 0
@@ -91,7 +98,6 @@ on init
     # Enable thermal and BCL hotplug
     write /sys/module/msm_thermal/core_control/enabled 1
 
-
     # Disable retention
     write /sys/module/lpm_levels/system/pwr/cpu0/ret/idle_enabled N
     write /sys/module/lpm_levels/system/pwr/cpu1/ret/idle_enabled N
@@ -117,6 +123,22 @@ on init
     write /sys/bus/msm_subsys/devices/subsys4/restart_level RELATED
     write /sys/bus/msm_subsys/devices/subsys5/restart_level RELATED
     write /sys/bus/msm_subsys/devices/subsys6/restart_level RELATED
+
+    mkdir /dev/cpuset/camera-daemon-dedicated
+    write /dev/cpuset/camera-daemon-dedicated/cpus 0-7
+    write /dev/cpuset/camera-daemon-dedicated/mems 0
+    chown system system /dev/cpuset/camera-daemon-dedicated
+    chown system system /dev/cpuset/camera-daemon-dedicated/tasks
+    chmod 0664 /dev/cpuset/camera-daemon-dedicated/tasks
+
+    # report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
+on early-init
+    # Dalvik CPUSet
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6,7
+    setprop dalvik.vm.dex2oat-threads 8
 
 on fs
     mount_all /vendor/etc/fstab.qcom
@@ -150,6 +172,9 @@ on property:sys.boot_completed=1
     write /sys/block/sde/queue/iostats 0
     write /sys/block/sda/queue/read_ahead_kb 128
     write /sys/block/sde/queue/read_ahead_kb 128
+
+    # Setup runtime blkio
+    write /dev/blkio/blkio.group_idle 2000
 
     # Setup final cpuset
     write /dev/cpuset/top-app/cpus 0-7
