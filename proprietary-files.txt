@@ -562,7 +562,6 @@ vendor/lib64/libconfigdb.so|4588957364a36adbd71deeb21a50dc230f464892
 vendor/lib64/liblqe.so|b51a79d2d1532bc6db741423391966484cb4c26d
 vendor/lib64/libmdmdetect.so|174cab27824c53eec11642e062623686e0e67d12
 vendor/lib64/liboemaids_vendor.so|9dc457aca5ee001f920a431844feb41843223697
-vendor/lib64/libprotobuf-cpp-full-21.7.so|58d3520fbfb0dea250e87eea92c03ca4fa057e74
 vendor/lib64/libqcmaputils.so|6f11706021739696d56447f03dfeafd5e3c98bea
 vendor/lib64/libqcrilFramework.so|9c1a85bc01b977dff3b3100d6d778b97aea4e82b
 vendor/lib64/libqrtr.so|13893190881121b89eaabb4d9c8b83275f715a60
