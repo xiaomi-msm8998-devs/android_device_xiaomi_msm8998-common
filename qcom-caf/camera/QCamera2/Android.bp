@@ -82,6 +82,7 @@ cc_library_shared {
         "-Wno-unused-parameter",
         "-Wno-unused-variable",
         "-Wno-compound-token-split-by-macro",
+        "-Wno-unused-but-set-variable",
         "-DFDLEAK_FLAG",
         "-DMEMLEAK_FLAG",
         "-DQCAMERA_HAL3_SUPPORT",
