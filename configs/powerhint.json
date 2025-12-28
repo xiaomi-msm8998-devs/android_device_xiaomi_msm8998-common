@@ -422,7 +422,13 @@
       "PowerHint": "LAUNCH",
       "Node": "UclampFgMin",
       "Duration": 3000,
-      "Value": "100"
+      "Value": "60"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "UclampFgWinMin",
+      "Duration": 3000,
+      "Value": "60"
     },
     {
       "PowerHint": "LAUNCH",
