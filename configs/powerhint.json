@@ -84,6 +84,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "UclampTALatency",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "UclampFgMin",
       "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
       "Values": [
@@ -312,6 +321,12 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "UclampTALatency",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 58,
       "Value": "0"
@@ -357,6 +372,12 @@
       "Node": "UclampTAMin",
       "Duration": 3000,
       "Value": "100"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "UclampTALatency",
+      "Duration": 5000,
+      "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
