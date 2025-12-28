@@ -97,6 +97,18 @@
       "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
       "Values": [
         "0",
+        "15",
+        "100"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampFgWinMin",
+      "Path": "/dev/cpuctl/foreground_window/cpu.uclamp.min",
+      "Values": [
+        "0",
+        "15",
         "100"
       ],
       "DefaultIndex": 0,
@@ -332,6 +344,18 @@
       "Node": "UclampTALatency",
       "Duration": 0,
       "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampFgMin",
+      "Duration": 0,
+      "Value": "15"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampFgWinMin",
+      "Duration": 0,
+      "Value": "15"
     },
     {
       "PowerHint": "INTERACTION",
