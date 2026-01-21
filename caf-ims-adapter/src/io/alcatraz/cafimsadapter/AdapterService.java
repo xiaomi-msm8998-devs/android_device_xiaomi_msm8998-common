@@ -8,8 +8,8 @@
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
  *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
  */
 
 package io.alcatraz.cafimsadapter;
@@ -18,31 +18,32 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.telephony.TelephonyManager;
 import android.os.IBinder;
 import android.os.UserHandle;
+import android.telephony.TelephonyManager;
 import android.util.Log;
-
 import androidx.annotation.Nullable;
 
 public class AdapterService extends Service {
-    private static final String TAG = "CAFIMSAdapter";
+  private static final String TAG = "CAFIMSAdapter";
 
-    @Nullable
-    @Override
-    public IBinder onBind(Intent intent) {
-        return null;
-    }
+  @Nullable
+  @Override
+  public IBinder onBind(Intent intent) {
+    return null;
+  }
 
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        IntentFilter intentFilter = new IntentFilter();
-        intentFilter.addAction(TelephonyManager.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED);
-        registerReceiver(new DataSubChangedReceiver(), intentFilter);
-        return super.onStartCommand(intent, flags, startId);
-    }
+  @Override
+  public int onStartCommand(Intent intent, int flags, int startId) {
+    IntentFilter intentFilter = new IntentFilter();
+    intentFilter.addAction(
+        TelephonyManager.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED);
+    registerReceiver(new DataSubChangedReceiver(), intentFilter);
+    return super.onStartCommand(intent, flags, startId);
+  }
 
-    public static void onBoot(Context context) {
-        context.startServiceAsUser(new Intent(context, AdapterService.class), UserHandle.SYSTEM);
-    }
+  public static void onBoot(Context context) {
+    context.startServiceAsUser(new Intent(context, AdapterService.class),
+                               UserHandle.SYSTEM);
+  }
 }
