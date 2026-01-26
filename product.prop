@@ -7,7 +7,7 @@ ro.soc.manufacturer=QTI
 ro.soc.model=MSM8998
 
 # eBPF
-ro.bpf.kver_override=5.4.299
+ro.bpf.kver_override=5.10.239
 
 # LMKD
 ro.lmk.low=1001
