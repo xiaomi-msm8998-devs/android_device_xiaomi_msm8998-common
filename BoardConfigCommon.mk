@@ -81,6 +81,9 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 # Media
 TARGET_USES_ION := true
 
+# Metadata
+BOARD_USES_METADATA_PARTITION := true
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4

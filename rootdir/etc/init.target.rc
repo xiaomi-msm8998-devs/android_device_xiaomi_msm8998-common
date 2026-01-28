@@ -142,6 +142,7 @@ on early-init
 
 on fs
     mount_all /vendor/etc/fstab.qcom
+    mount tmpfs tmpfs /metadata size=10m
 
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/alarm 0777 system system
