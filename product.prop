@@ -2,12 +2,12 @@
 # product props for MSM8998
 #
 
-# BPF
-ro.bpf.kver_override=5.4.299
-
 # Chipset
 ro.soc.manufacturer=QTI
 ro.soc.model=MSM8998
+
+# eBPF
+ro.bpf.kver_override=5.4.299
 
 # LMKD
 ro.lmk.low=1001
