@@ -175,7 +175,7 @@
       "Name": "GPUIdleTimer",
       "Path": "/sys/class/kgsl/kgsl-3d0/idle_timer",
       "Values": [
-        "10000",
+        "2000",
         "80"
       ],
       "ResetOnInit": true
@@ -426,6 +426,12 @@
       "Node": "GPUForceRailOn",
       "Duration": 3000,
       "Value": "1"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "GPUIdleTimer",
+      "Duration": 3000,
+      "Value": "2000"
     },
     {
       "PowerHint": "GAME",
