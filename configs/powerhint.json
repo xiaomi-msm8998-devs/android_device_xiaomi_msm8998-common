@@ -440,6 +440,12 @@
       "Value": "500"
     },
     {
+      "PowerHint": "GAME",
+      "Node": "UclampTALatency",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
       "PowerHint": "GAME_LOADING",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 8000,
