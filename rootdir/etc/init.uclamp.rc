@@ -101,7 +101,7 @@ on property:sys.boot_completed=1
 
     # dex2oat
     write /dev/cpuctl/dex2oat/cpu.uclamp.max max
-    write /dev/cpuctl/dex2oat/cpu.uclamp.min 10
+    write /dev/cpuctl/dex2oat/cpu.uclamp.min 0
     write /dev/cpuctl/dex2oat/cpu.uclamp.latency_sensitive 0
 
     # foreground
