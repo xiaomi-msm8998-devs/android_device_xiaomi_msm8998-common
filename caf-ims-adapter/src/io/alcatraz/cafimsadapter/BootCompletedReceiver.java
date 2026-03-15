@@ -20,11 +20,11 @@ import android.content.Intent;
 import android.util.Log;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
-  private static final String TAG = "CAFIMSAdapter";
+    private static final String TAG = "CAFIMSAdapter";
 
-  @Override
-  public void onReceive(Context context, Intent intent) {
-    Log.d(TAG, "Starting");
-    AdapterService.onBoot(context);
-  }
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        Log.d(TAG, "Starting");
+        AdapterService.onBoot(context);
+    }
 }

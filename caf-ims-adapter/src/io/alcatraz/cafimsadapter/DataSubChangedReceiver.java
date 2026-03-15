@@ -20,14 +20,13 @@ import android.content.Intent;
 import android.os.UserHandle;
 
 public class DataSubChangedReceiver extends BroadcastReceiver {
-  @Override
-  public void onReceive(Context context, Intent intent) {
-    if (context == null) {
-      return;
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        if (context == null) {
+            return;
+        }
+        context.sendBroadcastAsUser(
+                new Intent().setAction("org.codeaurora.intent.action.ACTION_DDS_SWITCH_DONE"),
+                UserHandle.ALL);
     }
-    context.sendBroadcastAsUser(
-        new Intent().setAction(
-            "org.codeaurora.intent.action.ACTION_DDS_SWITCH_DONE"),
-        UserHandle.ALL);
-  }
 }
