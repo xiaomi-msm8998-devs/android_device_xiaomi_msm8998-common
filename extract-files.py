@@ -59,7 +59,7 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('socket: 1\n', '')
         .regex_replace('\nsigreturn: 1', ''),
     'vendor/etc/izat.conf': blob_fixup()
-        .regex_replace('PROCESS_STATE=ENABLED', 'PROCESS_STATE=DISABLED'),
+        .patch_file('gps/0001-gps-izat-Disable-slim_daemon.patch'),
     'vendor/lib/hw/camera.msm8998.so': blob_fixup()
         .binary_regex_replace(b'service.bootanim.exit', b'service.bootanim.zzzz')
         .remove_needed('android.hidl.base@1.0.so')
