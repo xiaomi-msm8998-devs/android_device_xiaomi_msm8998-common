@@ -119,6 +119,7 @@
       "Path": "/dev/cpuctl/system/cpu.uclamp.min",
       "Values": [
         "0",
+        "30",
         "100"
       ],
       "DefaultIndex": 0,
@@ -356,6 +357,12 @@
       "Node": "UclampFgWinMin",
       "Duration": 0,
       "Value": "25"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampSysMin",
+      "Duration": 0,
+      "Value": "30"
     },
     {
       "PowerHint": "INTERACTION",
