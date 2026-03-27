@@ -162,9 +162,6 @@
          that can be set by the user. -->
     <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.06667</item>
 
-    <!-- Whether device supports double tap to wake -->
-    <bool name="config_supportDoubleTapWake">true</bool>
-
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
 
