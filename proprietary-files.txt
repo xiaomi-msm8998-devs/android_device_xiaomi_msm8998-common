@@ -699,12 +699,12 @@ vendor/lib/libsdsprpc.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 vendor/lib/libsns_low_lat_stream_stub.so
-vendor/lib/sensors.ssc.so:vendor/lib/hw/sensors.msm8998.so;FIX_SONAME
+vendor/lib/sensors.ssc.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/sensors.ssc.so:vendor/lib64/hw/sensors.msm8998.so;FIX_SONAME
+vendor/lib64/sensors.ssc.so
 
 # Soter - from lavender V12.5.3.0.QFGCNXM
 vendor/app/SoterService/SoterService.apk|a906b956cff77c2a1bcb26d8a74ecd386b50eeb2
