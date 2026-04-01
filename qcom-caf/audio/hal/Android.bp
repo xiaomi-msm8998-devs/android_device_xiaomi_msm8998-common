@@ -56,6 +56,7 @@ target_board_platform_cc_library_shared {
 
     cflags: [
         "-Werror",
+        "-Wno-unused-parameter",
         "-D_GNU_SOURCE",
         "-DHW_VARIANTS_ENABLED",
     ] + select(soong_config_variable("qtiaudio", "feature_elliptic_ultrasound"), {

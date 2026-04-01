@@ -17,6 +17,8 @@
  * limitations under the License.
  */
 
+int AUDIO_DEVICE_IN_ALL_CODEC_BACKEND = 0;
+
 #define LOG_TAG "msm8974_platform"
 //#define LOG_NDEBUG 0
 #define LOG_NDDEBUG 0
@@ -198,6 +200,8 @@ char cal_name_info[WCD9XXX_MAX_CAL][MAX_CAL_NAME] = {
 static char *default_rx_backend = NULL;
 
 #define  AUDIO_PARAMETER_IS_HW_DECODER_SESSION_ALLOWED  "is_hw_dec_session_allowed"
+
+extern const char * const use_case_table[AUDIO_USECASE_MAX];
 
 char dsp_only_decoders_mime[][MAX_MIME_TYPE_LENGTH] = {
     "audio/x-ms-wma" /* wma*/ ,

@@ -451,11 +451,6 @@ int GetYUVPlaneInfo(const private_handle_t *hnd, struct android_ycbcr *ycbcr) {
   BufferDim_t buffer_dim;
   if (getMetaData(const_cast<private_handle_t *>(hnd),
                   GET_BUFFER_GEOMETRY, &buffer_dim) == 0) {
-    int usage = 0;
-    if (hnd->flags & private_handle_t::PRIV_FLAGS_UBWC_ALIGNED) {
-      usage = GRALLOC1_PRODUCER_USAGE_PRIVATE_ALLOC_UBWC;
-    }
-
     BufferInfo info(buffer_dim.sliceWidth, buffer_dim.sliceHeight, format,
                     prod_usage, cons_usage);
     GetAlignedWidthAndHeight(info, &width, &height);

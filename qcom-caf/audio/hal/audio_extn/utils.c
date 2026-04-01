@@ -2470,7 +2470,7 @@ static const char *kConfigLocationList[] =
 static const int kConfigLocationListSize =
         (sizeof(kConfigLocationList) / sizeof(kConfigLocationList[0]));
 
-bool audio_extn_utils_resolve_config_file(char file_name[MIXER_PATH_MAX_LENGTH])
+bool audio_extn_utils_resolve_config_file(char file_name[])
 {
     char full_config_path[MIXER_PATH_MAX_LENGTH];
     for (int i = 0; i < kConfigLocationListSize; i++) {

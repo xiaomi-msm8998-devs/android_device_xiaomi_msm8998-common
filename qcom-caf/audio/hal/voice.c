@@ -52,6 +52,9 @@ struct pcm_config pcm_config_voice_call = {
 struct pcm *voice_loopback_tx = NULL;
 struct pcm *voice_loopback_rx = NULL;
 #endif
+
+extern const char * const use_case_table[AUDIO_USECASE_MAX];
+
 static struct voice_session *voice_get_session_from_use_case(struct audio_device *adev,
                               audio_usecase_t usecase_id)
 {
