@@ -71,6 +71,8 @@
 static int  vendor_enhanced_info = 0;
 static bool is_compress_meta_data_enabled = false;
 
+extern const char * const use_case_table[AUDIO_USECASE_MAX];
+
 struct snd_card_split cur_snd_card_split = {
     .device = {0},
     .snd_card = {0},

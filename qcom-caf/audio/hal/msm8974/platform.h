@@ -70,7 +70,7 @@ enum {
  * All these devices are handled by the internal HW codec. We can
  * enable any one of these devices at any time
  */
-int AUDIO_DEVICE_IN_ALL_CODEC_BACKEND;
+extern int AUDIO_DEVICE_IN_ALL_CODEC_BACKEND;
 
 /* Sound devices specific to the platform
  * The DEVICE_OUT_* and DEVICE_IN_* should be mapped to these sound
