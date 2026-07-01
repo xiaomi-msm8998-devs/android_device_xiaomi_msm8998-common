@@ -232,6 +232,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.ims.vt.enableadb=0
 endif
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # IRQ
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
