@@ -11,7 +11,6 @@
 /data/vendor/fpc(/.*)?                                        u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/goodix(/.*)?                                     u:object_r:fingerprint_vendor_data_file:s0
 /(mnt/vendor)/persist/fpc(/.*)?                               u:object_r:fingerprint_persist_file:s0
-/sys/devices/platform/soc/soc:fingerprint_fpc(/.*)?           u:object_r:fingerprint_sysfs:s0
 
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1                       u:object_r:hal_mlipay_default_exec:s0

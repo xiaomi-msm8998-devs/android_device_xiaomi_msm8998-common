@@ -1,3 +1,6 @@
+# Fingerprint
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc       u:object_r:fingerprint_sysfs:s0
+
 # Graphics
 genfscon sysfs /devices/virtual/graphics/fb0/idle_state         u:object_r:sysfs_graphics:s0
 
