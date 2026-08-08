@@ -63,6 +63,8 @@ blob_fixups: blob_fixups_user_type = {
         .patch_file('gps/0001-gps-izat-Disable-slim_daemon.patch'),
     'vendor/lib/hw/camera.msm8998.so': blob_fixup()
         .binary_regex_replace(b'service.bootanim.exit', b'service.bootanim.zzzz')
+        .binary_regex_replace(b'\xc1\x68\xd0\xe9\x0d\x20\xcd\xe9\x03\x20', b'\xc1\x68\xd0\xe9\x12\x20\xcd\xe9\x03\x20')
+        .binary_regex_replace(b'\xdb\xf8\x00\x10\x08\x9a\x49\x6b\xc6\xe9\x04\x21', b'\xdb\xf8\x00\x10\x08\x9a\x89\x6c\xc6\xe9\x04\x21')
         .remove_needed('android.hidl.base@1.0.so')
         .remove_needed('libminikin.so'),
     (
