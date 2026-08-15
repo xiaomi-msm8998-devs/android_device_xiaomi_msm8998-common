@@ -46,11 +46,4 @@ do
     echo 1600 > $cpubw/bw_hwmon/idle_mbps
 done
 
-for memlat in /sys/class/devfreq/*qcom,cpu?-cpu-ddr-lat
-do
-    echo "mem_latency" > $memlat/governor
-    echo 10 > $memlat/polling_interval
-    echo 400 > $memlat/mem_latency/ratio_ceil
-done
-
 setprop vendor.post_boot.parsed 1

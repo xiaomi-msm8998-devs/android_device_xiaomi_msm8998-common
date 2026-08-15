@@ -224,6 +224,16 @@ service vendor.qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     disabled
     oneshot
 
+on property:vendor.post_boot.parsed=1
+    start vendor.qti-dcvs
+
+service vendor.qti-dcvs /vendor/bin/init.qti.dcvs.sh
+    class late_start
+    user root
+    group root system
+    disabled
+    oneshot
+
 service vendor.panel-info /vendor/bin/init.panel_info.sh
     class core
     user root
