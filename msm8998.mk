@@ -167,6 +167,9 @@ PRODUCT_PACKAGES += \
 # Extra
 $(call inherit-product-if-exists, vendor/extra/extra.mk)
 
+# Fastbootd
+TARGET_DISABLE_FASTBOOTD := true
+
 # Filesystem
 PRODUCT_PACKAGES += \
     e2fsck_ramdisk \
