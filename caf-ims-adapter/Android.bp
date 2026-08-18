@@ -1,22 +1,18 @@
 //
-// Copyright (C) 2023 Alcatraz323 <alcatraz32323@gmail.com>
-//
+// SPDX-FileCopyrightText: 2025 Alcatraz323 <alcatraz32323@gmail.com>
+// SPDX-FileCopyrightText: 2026 The LineageOS Project
 // SPDX-License-Identifier: Apache-2.0
 //
 
 android_app {
     name: "CAFIMSAdapter",
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.kt"],
     resource_dirs: ["res"],
     certificate: "platform",
     platform_apis: true,
     privileged: true,
     system_ext_specific: true,
-
-    static_libs: [
-        "androidx.core_core",
-    ],
 
     required: [
         "privapp-permissions_io.alcatraz.cafimsadapter",
