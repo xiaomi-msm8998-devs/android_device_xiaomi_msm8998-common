@@ -12,7 +12,4 @@ genfscon sysfs /devices/platform/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.q
 genfscon proc /sys/kernel/sched_boost                           u:object_r:proc_sched:s0
 
 # Wakeup
-genfscon sysfs /devices/platform/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@0/video4linux/video4/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@1/video4linux/video5/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@2/video4linux/video6/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup u:object_r:sysfs_wakeup:s0
